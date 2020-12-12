@@ -1,0 +1,27 @@
+.nav{
+    position: fixed;
+    top:0;
+    width:100%;
+    padding: 20px;
+    display: flex;
+    height :65px;
+    justify-content: space-between;
+    background-color: black;
+
+    font-family: 'Overpass', sans-serif;
+    z-index:1;
+
+}
+.nav_title{
+    position:fixed;
+    left:20px;
+    color: white;
+    font-size: 20px;
+
+}
+.nav_menu{
+    position:fixed;
+    right:20px;
+    color: white;
+    font-size: 20px;
+}
