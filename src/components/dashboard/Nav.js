@@ -1,29 +1,33 @@
-import React, { useEffect, useState } from "react";
+import { Component } from "react"
+import React from 'react'
+import { Link } from "react-router-dom";
+import {Icon} from 'react-materialize';
 import './navbar.css'
-function Nav() {
-    const [show, handleShow] = useState(false);
-    useEffect(() => {
-        window.addEventListener("scroll",()=>{
-            if(window.scrollY>100){
-                handleShow(true);
-            }else{
-                handleShow(false);
-            }
-        });
-        return () => {
-           window.removeEventListener("scroll");
-        };
-    }, [])
-    return (
-        <div className={`nav ${show && "nav_black"}`}>
-            <div className="nav_title">
-                JobPortal
-            </div>
-            <div className="nav_menu">
-                Menu
-            </div> 
+class Nav extends Component{
+    render(){
+        return(
+            <div>
+                <nav>
+                    <div className="nav-wrapper black">
+                        <Link to="/"><span className="logo left">JobPortal</span></Link>
+                        <span className="sidenav-trigger hide-on-large-only right" data-target="slide-out"><Icon>menu</Icon></span>
+                            <ul id="nav-mobile" className="right hide-on-med-and-down">
+                                <li><Link to="/findJob">Find A Job</Link></li>
+                                <li><Link to="/postJob">Post A Job</Link></li>
+                                <li><Link to="/login">Login</Link></li>
+                                <li><Link to="/register">Register</Link></li>
+                            </ul>
+                    </div>
+                </nav>
+                <ul className="sidenav black" id="slide-out">
+                <li><Link className="sidenav-close white-text" to="/findJob">Find a Job</Link></li>
+            <li><Link className="sidenav-close white-text" to="/postJob">Post a Job</Link></li>
+            <li><Link className="sidenav-close white-text " to="/login">Login</Link></li>
+            <li><Link className="sidenav-close white-text " to="/register">Register</Link></li>
+          
+                </ul>
         </div>
-    )
+        );
+    }
 }
-
-export default Nav
+export default Nav;
