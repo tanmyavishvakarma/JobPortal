@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './postajob.css'
-import {Radio} from '@material-ui/core/Radio';
+import Radio from '@material-ui/core/Radio'
 
 class postajobform extends Component{
     render(){
@@ -10,20 +10,23 @@ class postajobform extends Component{
                     Post a Job
                 </div>
                 <form>
-                    <div className="input-field">
-                        <label className="plabel" htmlFor="jobtitle">Job Title</label>
-                        <input  id="jobtitle"  type ="text" name="jobtitle" ></input>
+                    <div className="jobblanks">
+                        <div className="input-field">
+                            <label className="plabel" htmlFor="jobtitle">Job Title</label>
+                            <input  id="jobtitle"  type ="text" name="jobtitle" ></input>
+                        </div>
+                        < div className="input-field">
+                            <label className="plabel" htmlFor="Company">Company</label>
+                            <input  id="company"  type ="text" name="company" ></input>
+                        </div>
+                        <div className="input-field">
+                            <label className="plabel" htmlFor="jobtitle">Job Title</label>
+                            <input  id="jobtitle"  type ="text" name="jobtitle" ></input>
+                        </div>
                     </div>
-                   < div className="input-field">
-                        <label className="plabel" htmlFor="Company">Company</label>
-                        <input  id="company"  type ="text" name="company" ></input>
+                    <div className="jobradio">
+                        hfdjdf
                     </div>
-                    <div className="input-field">
-                        <label className="plabel" htmlFor="jobtitle">Job Title</label>
-                        <input  id="jobtitle"  type ="text" name="jobtitle" ></input>
-                    </div>
-                    <Radio />
-                    
                 </form>
             </div>
         );

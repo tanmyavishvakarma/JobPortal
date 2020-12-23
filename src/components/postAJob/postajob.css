@@ -8,9 +8,30 @@
     color:grey;
 }
 form{
-    margin: 0 1rem;
+   display:flex;
+   justify-content: center;
    
 }
+.jobblanks{
+    margin: 0 1rem;
+    background-color:  #f5fdff   ;
+    border-radius: 10px;
+    padding-top:2px;
+    padding-bottom: 12px;
+    flex:3;
+    border-inline-color: black;
+ 
+}
+.jobradio{
+     margin: 0 1rem;
+    background-color:  #f5fdff   ;
+    border-radius: 10px;
+    padding-top:2px;
+    padding-bottom: 12px;
+    flex:1;
+    display: inline-block;
+}
+
 .plabel{
     color: black;
     padding: 0 1rem;
