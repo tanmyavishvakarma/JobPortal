@@ -12,7 +12,7 @@ class Nav extends Component{
                         <Link to="/"><span className="logo left">JobPortal</span></Link>
                         <span className="sidenav-trigger hide-on-large-only right" data-target="slide-out"><Icon>menu</Icon></span>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                <li><Link to="/findJob">Find A Job</Link></li>
+                                <li><Link className="menu1" to="/findJob">Find A Job</Link></li>
                                 <li><Link to="/postJob">Post A Job</Link></li>
                                 <li><Link to="/login">Login</Link></li>
                                 <li><Link to="/register">Register</Link></li>
@@ -22,8 +22,8 @@ class Nav extends Component{
                 <ul className="sidenav black" id="slide-out">
                 <li><Link className="sidenav-close white-text" to="/findJob">Find a Job</Link></li>
             <li><Link className="sidenav-close white-text" to="/postJob">Post a Job</Link></li>
-            <li><Link className="sidenav-close white-text " to="/login">Login</Link></li>
-            <li><Link className="sidenav-close white-text " to="/register">Register</Link></li>
+            <li><Link className="sidenav-close white-text" to="/login">Login</Link></li>
+            <li><Link className="sidenav-close white-text" to="/register">Register</Link></li>
           
                 </ul>
         </div>

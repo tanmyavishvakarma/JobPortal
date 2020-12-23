@@ -1,3 +1,26 @@
 .container{
-    background-image: url('./assets/back1.jpg');
+
+    margin-top: 5rem;
+    width: 100%;
+    
+ 
 }
+.stats{
+    
+    display: flex;
+    justify-content:space-around;
+ 
+}
+.job{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    color:grey
+}
+.title{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 1.2rem;
+    color:grey
+
+}
+
+

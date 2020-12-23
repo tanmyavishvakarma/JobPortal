@@ -4,22 +4,31 @@
     width:100%;
     padding: 20px;
     display: flex;
-    height :65px;
+    
     justify-content: space-between;
     background-color: black;
-
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Oswald', sans-serif;
     z-index:1;
 
 }
 
 .logo{
-    font-size: 25px;
-    font-family: 'Comfortaa';
+    font-size: 30px;
+    font-family: 'Oswald';
 
 }
 .nav-wrapper{
     padding-left: 15px;
     padding-right: 15px;
     color:white;
+     
+    font-family: "Oswald";
+}
+.sidenav-close{
+    font-family: "Oswald";
+    font-size: 20px;
+}
+.sidenav-trigger
+{
+    cursor: pointer;
 }

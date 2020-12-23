@@ -4,13 +4,11 @@ import {BrowserRouter, Switch,Route} from 'react-router-dom'
 import { Component } from 'react';
 import Nav from './components/dashboard/Nav';
 import Home from './components/dashboard/Home.js'
-import M from  'materialize-css/dist/js/materialize.min.js'
+import PostAJob from './components/postAJob/postajobform'
+
 
 class App extends Component{
-  componentDidMount() {
-    let sidenav = document.querySelector('#slide-out');
-    M.Sidenav.init(sidenav, {});
-  }
+
   render(){
     return(
       <BrowserRouter>
@@ -18,6 +16,7 @@ class App extends Component{
         <Nav />
         <Switch>
           <Route exact path="/" component={Home}></Route>
+          <Route exact path="/postJob" component={PostAJob}></Route>
         </Switch>
         </div>  
       </BrowserRouter>
