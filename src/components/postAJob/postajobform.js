@@ -20,13 +20,11 @@ class postajobform extends Component{
                             <input  id="company"  type ="text" name="company" ></input>
                         </div>
                         <div className="input-field">
-                            <label className="plabel" htmlFor="jobtitle">Job Title</label>
+                            <label className="plabel" htmlFor="jobtitle">Office Location</label>
                             <input  id="jobtitle"  type ="text" name="jobtitle" ></input>
                         </div>
                     </div>
-                    <div className="jobradio">
-                        hfdjdf
-                    </div>
+                  
                 </form>
             </div>
         );

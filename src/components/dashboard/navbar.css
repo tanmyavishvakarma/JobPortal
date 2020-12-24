@@ -15,12 +15,13 @@
 .logo{
     font-size: 30px;
     font-family: 'Oswald';
+    COLOR:black;
 
 }
 .nav-wrapper{
     padding-left: 15px;
     padding-right: 15px;
-    color:white;
+    color:black;
      
     font-family: "Oswald";
 }
@@ -31,4 +32,7 @@
 .sidenav-trigger
 {
     cursor: pointer;
+}
+li{
+    color:black;
 }

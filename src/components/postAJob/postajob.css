@@ -14,12 +14,12 @@ form{
 }
 .jobblanks{
     margin: 0 1rem;
-    background-color:  #f5fdff   ;
+    ;
     border-radius: 10px;
     padding-top:2px;
     padding-bottom: 12px;
     flex:3;
-    border-inline-color: black;
+    
  
 }
 .jobradio{

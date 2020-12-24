@@ -8,22 +8,22 @@ class Nav extends Component{
         return(
             <div>
                 <nav>
-                    <div className="nav-wrapper black">
+                    <div className="nav-wrapper white">
                         <Link to="/"><span className="logo left">JobPortal</span></Link>
                         <span className="sidenav-trigger hide-on-large-only right" data-target="slide-out"><Icon>menu</Icon></span>
                             <ul id="nav-mobile" className="right hide-on-med-and-down">
-                                <li><Link className="menu1" to="/findJob">Find A Job</Link></li>
-                                <li><Link to="/postJob">Post A Job</Link></li>
-                                <li><Link to="/login">Login</Link></li>
-                                <li><Link to="/register">Register</Link></li>
+                                <li><Link className="menu1 black-text" to="/findJob">Find A Job</Link></li>
+                                <li><Link className="black-text" to="/postJob">Post A Job</Link></li>
+                                <li><Link className="black-text" to="/login">Login</Link></li>
+                                <li><Link className="black-text"  to="/register">Register</Link></li>
                             </ul>
                     </div>
                 </nav>
-                <ul className="sidenav black" id="slide-out">
-                <li><Link className="sidenav-close white-text" to="/findJob">Find a Job</Link></li>
-            <li><Link className="sidenav-close white-text" to="/postJob">Post a Job</Link></li>
-            <li><Link className="sidenav-close white-text" to="/login">Login</Link></li>
-            <li><Link className="sidenav-close white-text" to="/register">Register</Link></li>
+                <ul className="sidenav white" id="slide-out">
+                <li><Link className="sidenav-close black-text" to="/findJob">Find a Job</Link></li>
+            <li><Link className="sidenav-close black-text" to="/postJob">Post a Job</Link></li>
+            <li><Link className="sidenav-close black-text" to="/login">Login</Link></li>
+            <li><Link className="sidenav-close black-text" to="/register">Register</Link></li>
           
                 </ul>
         </div>
