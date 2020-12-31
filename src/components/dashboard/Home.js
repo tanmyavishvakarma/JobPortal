@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
 import './home.css'
 import {Jumbotron} from 'reactstrap'
+
 class Home extends Component{
     render(){
         return(

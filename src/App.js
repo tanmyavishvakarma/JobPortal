@@ -5,7 +5,9 @@ import { Component } from 'react';
 import Nav from './components/dashboard/Nav';
 import Home from './components/dashboard/Home.js'
 import PostAJob from './components/postAJob/postajobform'
-import Login from './components/auth/Login'
+import Login from './components/auth/Login.js'
+import Register from './components/auth/Register'
+
 
 class App extends Component{
 
@@ -18,6 +20,7 @@ class App extends Component{
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/postJob" component={PostAJob}></Route>
           <Route exact path="/login" component={Login}></Route>
+          <Route exact path="/register" component={Register}></Route>
         </Switch>
         </div>  
       </BrowserRouter>

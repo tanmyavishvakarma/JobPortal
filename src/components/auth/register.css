@@ -1,20 +1,17 @@
-.lform{
+.rform{
     display:flex;
     flex-direction: column;
-   
+    margin:0 1rem;
 }
  .tophead{
      color:grey;
  }
  
-.llabel{
+.rlabel{
+    color: black;
     padding: 0 1rem;
 }
-input{
-    color: white;
-   
-}
-.lbtn{
+.rbtn{
  
     background-color: rgba(231, 230, 230, 0.815);
     border: none;;
