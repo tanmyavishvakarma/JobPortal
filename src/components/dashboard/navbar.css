@@ -28,9 +28,11 @@
 .sidenav-close{
     font-family: "Oswald";
     font-size: 20px;
+
 }
 .sidenav-trigger
 {
+    color:white;
     cursor: pointer;
 }
 li{
