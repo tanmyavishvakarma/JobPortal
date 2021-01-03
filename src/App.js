@@ -18,7 +18,7 @@ class App extends Component{
         <Nav />
         <Switch>
           <Route exact path="/" component={Home}></Route>
-          <Route exact path="/postJob" component={PostAJob}></Route>
+          <Route exact path="/postjob" component={PostAJob}></Route>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/register" component={Register}></Route>
         </Switch>
