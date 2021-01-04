@@ -1,21 +1,28 @@
 import React, { Component } from 'react'
 import './postajob.css'
-import Radio from '@material-ui/core/Radio'
-import Dropdown from 'react-bootstrap/DropdownButton'
 import {Button} from 'react-bootstrap'
 import axios from 'axios'
 
 class postajobform extends Component{
+
     constructor(props){
         super(props);
         this.state={
             jobtitle:'',
             company:'',
-            officelocation:''
+            officelocation:'',
+            jobtype:''
         }
         this.handleJobTitleChange=this.handleJobTitleChange.bind(this)
         this.handleCompanyChange=this.handleCompanyChange.bind(this)
         this.handleOfficeLocationChange=this.handleOfficeLocationChange.bind(this)
+        this.handleJobTypeChange=this.handleJobTypeChange.bind(this)
+    }
+
+    handleJobTypeChange=(e)=>{
+        this.setState({
+            jobtype:e.target.value,
+        }) 
     }
 
     handleJobTitleChange=(e)=>{
@@ -38,12 +45,13 @@ class postajobform extends Component{
         const postedjob = {
             jobtitle:this.state.jobtitle,
             company:this.state.company,
-            officelocation:this.state.officelocation
+            officelocation:this.state.officelocation,
+            jobtype:this.state.jobtype
         }
 
         axios.post('http://localhost:4000/api/postjob',postedjob)
             .then(response=>console.log(response.data))
-        
+        alert("Job Inserted in database")
         window.location="/"
 
     }
@@ -68,8 +76,27 @@ class postajobform extends Component{
                             <label className="plabel" htmlFor="jobtitle">Office Location</label>
                             <input  id="officelocation"  value={this.state.officelocation} onChange={this.handleOfficeLocationChange} type ="text" name="officelocation" ></input>
                         </div>
+                        <div className="radio" >
+                                <label>
+                                    <input name="group1" class="with-gap" value="Full Time"onChange={this.handleJobTypeChange}type="radio" defaultChecked />
+                                    <span>Full Time</span>
+                                </label>
+                                <label>
+                                    <input name="group1" class="with-gap" value="Part Time" onChange={this.handleJobTypeChange}type="radio" />
+                                    <span>Part Time  </span>
+                                </label>
+                                <label>
+                                    <input name="group1" class="with-gap " value="Internship" onChange={this.handleJobTypeChange} type="radio" />
+                                    <span>Internship  </span>
+                                </label>
+                                <label>
+                                    <input name="group1" class="with-gap" value="Freelancing" onChange={this.handleJobTypeChange} type="radio"  />
+                                    <span>Freelancing</span>
+                                </label>
+                        </div>
+                        <br></br>
                         <div btn-wrapper>
-                            <Button onClick={this.handleSubmit} className="pbtn" value="Submit" type="submit">Post Job</Button>
+                            <Button onClick={this.handleSubmit} className="rbtn" value="Submit" type="submit">Post Job</Button>
                         </div>
                     </div>
                 </form>

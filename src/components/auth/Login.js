@@ -37,8 +37,6 @@ class Login extends Component{
         axios.post('http://localhost:4000/api/login',loggedin)
             .then(response=>console.log(response.data))
         
-        
-
         window.location="/"
 
     }
@@ -48,17 +46,17 @@ class Login extends Component{
                 <div className="tophead">
                     Login
                 </div>
-                <form className="lform">
+                <form className="rform">
                     <div className="input-field ">
                         <label className="llabel">Email</label>
                         <input value={this.state.email} onChange={this.handleEmailChange} type="text"></input>
-                    </div>
+                    </div>SS
                     <div className="input-field">
                         <label className="llabel">Password</label>
                         <input type="password" value={this.state.password} onChange={this.handlePasswordChange}></input>
                     </div>
                     <div btn-wrapper>
-                    <Button onClick={this.handleSubmit} className="lbtn" value="Submit" type="submit">Login</Button>
+                        <Button onClick={this.handleSubmit} className="lbtn" value="Submit" type="submit">Login</Button>
                     </div>
                 
                 </form>

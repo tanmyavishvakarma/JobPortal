@@ -13,8 +13,7 @@ form{
    
 }
 .jobblanks{
-    margin: 0 1rem;
-    ;
+    margin: 0 1rem;;
     border-radius: 10px;
     padding-top:2px;
     padding-bottom: 12px;
@@ -22,22 +21,7 @@ form{
     
  
 }
-.jobradio{
-     margin: 0 1rem;
-    background-color:  #f5fdff   ;
-    border-radius: 10px;
-    padding-top:2px;
-    padding-bottom: 12px;
-    flex:1;
-    display: inline-block;
-}
 
-.plabel{
-    color: black;
-    padding: 0 1rem;
+.radio label{
+    padding-right: 1rem;
 }
-.input-field{
-    padding:0 1rem;
-}
-
-    

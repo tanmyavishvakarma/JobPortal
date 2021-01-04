@@ -6,7 +6,6 @@ class findJobform extends Component{
             <div>
                 <div className="rcontainer">
                 <div className="tophead">
-                    Create Account
                 </div>    
                 <form className="rform green-text">
                 <div className="input-field green-text">

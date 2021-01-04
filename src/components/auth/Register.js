@@ -53,8 +53,8 @@ class Register extends Component{
                 <div className="tophead">
                     Create Account
                 </div>    
-                <form className="rform green-text">
-                <div className="input-field green-text">
+                <form className="rform">
+                        <div className="input-field">
                                 <label className="rlabel">
                                     Name
                                 </label>

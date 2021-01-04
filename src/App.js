@@ -9,7 +9,7 @@ import Login from './components/auth/Login.js'
 import Register from './components/auth/Register'
 
 
-class App extends Component{
+class App extends Component{z
 
   render(){
     return(
