@@ -7,6 +7,7 @@ import Home from './components/dashboard/Home.js'
 import PostAJob from './components/postAJob/postajobform'
 import Login from './components/auth/Login.js'
 import Register from './components/auth/Register'
+import findjob from './components/findAJob/findajobform'
 
 
 class App extends Component{z
@@ -21,6 +22,7 @@ class App extends Component{z
           <Route exact path="/postjob" component={PostAJob}></Route>
           <Route exact path="/login" component={Login}></Route>
           <Route exact path="/register" component={Register}></Route>
+          <Route exact path="/findjob" component={findjob}></Route>
         </Switch>
         </div>  
       </BrowserRouter>

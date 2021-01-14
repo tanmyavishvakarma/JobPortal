@@ -52,7 +52,7 @@ class postajobform extends Component{
         axios.post('http://localhost:4000/api/postjob',postedjob)
             .then(response=>console.log(response.data))
         alert("Job Inserted in database")
-        window.location="/"
+
 
     }
     

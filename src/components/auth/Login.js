@@ -30,14 +30,14 @@ class Login extends Component{
     handleSubmit=(e)=>{
         e.preventDefault()
         const loggedin = {
-            email:this.state.email,
+            username:this.state.email,
             password:this.state.password
         }
 
-        axios.post('http://localhost:4000/api/login',loggedin)
+        axios.post('http://localhost:4002/api/login',loggedin)
             .then(response=>console.log(response.data))
         
-        window.location="/"
+
 
     }
     render(){
@@ -48,7 +48,7 @@ class Login extends Component{
                 </div>
                 <form className="rform">
                     <div className="input-field ">
-                        <label className="llabel">Email</label>
+                        <label className="llabel">Username</label>
                         <input value={this.state.email} onChange={this.handleEmailChange} type="text"></input>
                     </div>SS
                     <div className="input-field">

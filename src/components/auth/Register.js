@@ -34,17 +34,14 @@ class Register extends Component{
     handleSubmit=(e)=>{
         e.preventDefault()
         const registered = {
-            name:this.state.name,
+            username:this.state.name,
             email:this.state.email,
             password:this.state.password
         }
 
-        axios.post('http://localhost:4000/api/register',registered)
+        axios.post('http://localhost:4002/api/register',registered)
             .then(response=>console.log(response.data))
-        
-        
-
-        window.location="/"
+            console.log(registered)
 
     }
     render(){
@@ -56,7 +53,7 @@ class Register extends Component{
                 <form className="rform">
                         <div className="input-field">
                                 <label className="rlabel">
-                                    Name
+                                    Username
                                 </label>
                             <input value={this.state.name} onChange={this.handleNameChange} id="name" name="name" type="text"></input>
                         </div>
