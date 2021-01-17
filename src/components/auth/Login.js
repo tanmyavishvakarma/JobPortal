@@ -9,17 +9,17 @@ class Login extends Component{
     constructor(props){
         super(props);
         this.state={
-            email:'',
+            username:'',
             password:''
         }
-        this.handleEmailChange=this.handleEmailChange.bind(this)
+        this.handleUsernameChange=this.handleUsernameChange.bind(this)
         this.handlePasswordChange=this.handlePasswordChange.bind(this)
         
     }
 
-    handleEmailChange=(e)=>{
+    handleUsernameChange=(e)=>{
         this.setState({
-            email:e.target.value,
+            username:e.target.value,
         })
     }
     handlePasswordChange=(e)=>{
@@ -29,16 +29,23 @@ class Login extends Component{
     }
     handleSubmit=(e)=>{
         e.preventDefault()
-        const loggedin = {
-            username:this.state.email,
+        const logindata = {
+            username:this.state.username,
             password:this.state.password
         }
 
-        axios.post('http://localhost:4002/api/login',loggedin)
-            .then(response=>console.log(response.data))
-        
-
-
+        axios.post('http://localhost:4002/api/login',logindata)
+            .then(response=>{
+                console.log("ui",response.data)
+                if(response.data.login==="Successfully Authenticated"){
+                    localStorage.setItem("publisher",response.data.publisher)
+                    this.props.history.push("/home")    
+                } 
+                else{
+                    this.props.history.push("/login")
+                    alert("Invalid Username or Password")
+                }
+            })
     }
     render(){
         return(
@@ -49,8 +56,8 @@ class Login extends Component{
                 <form className="rform">
                     <div className="input-field ">
                         <label className="llabel">Username</label>
-                        <input value={this.state.email} onChange={this.handleEmailChange} type="text"></input>
-                    </div>SS
+                        <input value={this.state.username} onChange={this.handleUsernameChange} type="text"></input>
+                    </div>
                     <div className="input-field">
                         <label className="llabel">Password</label>
                         <input type="password" value={this.state.password} onChange={this.handlePasswordChange}></input>

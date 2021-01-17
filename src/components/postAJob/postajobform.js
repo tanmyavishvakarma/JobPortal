@@ -46,12 +46,14 @@ class postajobform extends Component{
             jobtitle:this.state.jobtitle,
             company:this.state.company,
             officelocation:this.state.officelocation,
-            jobtype:this.state.jobtype
+            jobtype:this.state.jobtype,
+            publisher:localStorage.getItem("publisher")
         }
+        console.log(postedjob)
 
-        axios.post('http://localhost:4000/api/postjob',postedjob)
+        axios.post('http://localhost:4002/api/postjob',postedjob)
             .then(response=>console.log(response.data))
-        alert("Job Inserted in database")
+        alert("Job Inserted in database")   
 
 
     }
@@ -78,7 +80,7 @@ class postajobform extends Component{
                         </div>
                         <div className="radio" >
                                 <label>
-                                    <input name="group1" class="with-gap" value="Full Time"onChange={this.handleJobTypeChange}type="radio" defaultChecked />
+                                    <input name="group1" class="with-gap" value="Full Time"onChange={this.handleJobTypeChange}type="radio" />
                                     <span>Full Time</span>
                                 </label>
                                 <label>
