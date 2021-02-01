@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react'
 import { Component } from 'react';
+import { Button } from 'react-bootstrap';
 import './findajob.css'
 
 class FindJob extends Component{
@@ -22,7 +23,7 @@ class FindJob extends Component{
                 let jobtitle=[]
                 this.state.fetchedjobs.map((fetchedjob,idx)=>{
                     jobtitle.push([]);
-                    jobtitle[idx].push(fetchedjob.jobtitle,fetchedjob.company,fetchedjob.location,fetchedjob.jobtype,fetchedjob.publisher)
+                    jobtitle[idx].push(fetchedjob.jobtitle,fetchedjob.company,fetchedjob.location,fetchedjob.jobtype)
                 })
   
                 this.setState({
@@ -33,10 +34,12 @@ class FindJob extends Component{
     }
     render(){
         return(
+
             <div className="content">
                 {this.state.jobtitle.map(title=>
-                    {return <h5>{title.join(' ')}</h5>}
+                    {return <h5><a className="acontent" href="http://localhost:3000/jobprofile">{title.join(' ')}</a></h5>}
                 )}
+               
             </div>
         );
     }

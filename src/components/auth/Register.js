@@ -42,6 +42,7 @@ class Register extends Component{
         axios.post('http://localhost:4002/api/register',registered)
             .then(response=>console.log(response.data))
             console.log(registered)
+            this.props.history.push('/home')
 
     }
     render(){
