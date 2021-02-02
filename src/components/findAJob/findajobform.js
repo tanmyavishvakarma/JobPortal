@@ -4,6 +4,8 @@ import { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import './findajob.css';
 import Card from '../jobcard/JobCard'
+import { Container, Row, Col } from 'react-grid-system';
+import Grid from '@material-ui/core/Grid'
 class FindJob extends Component{
     constructor(props){
         super(props);
@@ -38,29 +40,33 @@ class FindJob extends Component{
         return(
             <div> 
                 <div
-                style={{
-                    fontSize: "3rem",
-                    marginTop: "20px",
-                    color: "#fff",
-                }}
-                >
-                    Jobs
+                    style={{
+                        fontSize: "3rem",
+                        marginTop: "20px",
+                        color: "#fff",
+                    }}
+                    >
+                        Jobs
                 </div>
-                <div className="row flex">
-                    hi
+                {/* <Grid container spacing={1}> */}
+                <div className="row flex">    
                     {this.state.fetchedjobs.map((job)=>(
                         <div className="col 14" key={job.jobtitle}>
-                            <Card  
-                                jobtitle={job.jobtitle} 
-                                jobtype={job.jobtype}
-                                officelocation={job.officelocation}
-                                company={job.company}
-                                publisher={job.publisher}
-                            />
+                            {/* //    <Grid item xs={12} l={3} m={2}> */}
+                                    <Card  
+                                        jobtitle={job.jobtitle} 
+                                        jobtype={job.jobtype}
+                                        officelocation={job.officelocation}
+                                        company={job.company}
+                                        publisher={job.publisher}
+                                    />
+                                {/* </Grid> */}
+                          
                         </div>
                     ))}
-                </div>
             </div>
+            {/* </Grid> */}
+        </div>
         );
     }
 }

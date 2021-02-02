@@ -1,13 +1,5 @@
-
-.content a {
+.row{
     display: flex;
-    align-items: center;
     justify-content: center;
-    color:white;
-    border:1px solid white; 
-    padding:10px;
-    margin:20px;
-}
-.content a:hover{
-    color:blue;
+    flex-wrap: wrap;
 }
