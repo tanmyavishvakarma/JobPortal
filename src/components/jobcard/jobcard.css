@@ -7,16 +7,15 @@
     border-radius: 4px;
     margin:10px;
     font-size:20px;
-    width:20rem;
-  
-  }
+    width:23rem;  
+}
 
 button{
     padding: 8px;
-  background-color:white;
-  width: max-content;
-  border: 1px solid black;
-  border-radius: 4px;
-  color: black;
-  display: inline-block;
+    background-color:white;
+    width: max-content;
+    border: 1px solid black;
+    border-radius: 4px;
+    color: black;
+    display: inline-block;
 }
