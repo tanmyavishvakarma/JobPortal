@@ -41,7 +41,14 @@ class postajobform extends Component{
         })
     }
     handleSubmit=(e)=>{
+        const postval=localStorage.getItem("links")
+        if(postval!=="in"){
+            e.preventDefault()
+            alert("You have to be logged in to post a job")
+            window.location=('/login')
+        }else{
         e.preventDefault()
+
         const postedjob = {
             jobtitle:this.state.jobtitle,
             company:this.state.company,
@@ -53,10 +60,10 @@ class postajobform extends Component{
 
         axios.post('http://localhost:4002/api/postjob',postedjob)
             .then(response=>console.log(response.data))
-        alert("Job Inserted in database") 
+
         window.location=("/findjob")  
 
-
+    }
     }
     
     render(){

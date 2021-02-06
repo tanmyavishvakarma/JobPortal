@@ -7,7 +7,14 @@ class JobCard extends Component{
         this.handleJob=this.handleJob.bind(this);
     }
     handleJob=(e)=>{
+        const findval=localStorage.getItem("links")
+        if(findval!=="in"){
+            e.preventDefault()
+            alert("You have to be logged in to apply for a job")
+            window.location=('/login')
+        }else{
         window.location=('/jobprofile/'+this.props.jobtitle+'/'+this.props.company+'/'+this.props.officelocation+'/'+this.props.jobtype+'/'+this.props.publisher)
+        }
     }
     render(){
         return(
