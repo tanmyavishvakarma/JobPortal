@@ -39,7 +39,9 @@ class Login extends Component{
                 console.log("ui",response.data)
                 if(response.data.login==="Successfully Authenticated"){
                     localStorage.setItem("publisher",response.data.publisher)
+                    localStorage.setItem("links","in")
                     this.props.history.push("/home")    
+                    window.location.reload();
                 } 
                 else{
                     this.props.history.push("/login")
