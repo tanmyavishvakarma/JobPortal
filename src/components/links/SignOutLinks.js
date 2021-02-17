@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import { Link } from "react-router-dom";
-import axios from 'axios'
+
 class SignOutLinks extends Component{
     constructor(props){
         super(props);

@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import './jobcard.css'
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 class JobCard extends Component{
     constructor(props){
         super(props);
@@ -25,7 +25,7 @@ class JobCard extends Component{
                 <div className="loc">Location: {this.props.officelocation}</div>
                 <div className="type">Job Type: {this.props.jobtype}</div>
                 <br></br>
-                <button onClick={this.handleJob}>Apply</button>
+                <button onClick={this.handleJob}><b>Apply</b></button>
             </div>
         )
     }

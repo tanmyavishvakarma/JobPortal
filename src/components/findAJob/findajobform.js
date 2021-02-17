@@ -1,11 +1,9 @@
 import axios from 'axios';
 import React from 'react'
 import { Component } from 'react';
-import { Button } from 'react-bootstrap';
 import './findajob.css';
 import Card from '../jobcard/JobCard'
-import { Container, Row, Col } from 'react-grid-system';
-import Grid from '@material-ui/core/Grid'
+
 class FindJob extends Component{
     constructor(props){
         super(props);

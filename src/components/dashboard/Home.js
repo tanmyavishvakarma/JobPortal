@@ -1,12 +1,11 @@
 import React,{Component} from 'react'
 import './home.css'
-import {Jumbotron} from 'reactstrap'
-
+import CountUp from '../countup/Countup'
 class Home extends Component{
     render(){
         return(
             <div className="container">
-                <div class="stats">
+                {/* <div class="stats">
                     <div className="job">
                         3000
                         <div className="title">Jobs</div>
@@ -19,7 +18,9 @@ class Home extends Component{
                         3000
                         <div className="title">Companies</div>
                     </div>
-                </div>
+                </div> */}
+                <center>   <CountUp></CountUp></center>
+             
             </div>
            
         );

@@ -8,10 +8,11 @@ import SignOutLinks from '../links/SignOutLinks'
 class Nav extends Component{
     render(){
         const val=localStorage.getItem('links')
+        var links;
         if(val==="in"){
-            var links=<SignOutLinks></SignOutLinks>
+            links=<SignOutLinks></SignOutLinks>
         }else{
-            var links=<SignInLinks></SignInLinks>
+            links=<SignInLinks></SignInLinks>
         }
         return(
 

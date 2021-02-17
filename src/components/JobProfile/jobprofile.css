@@ -1,0 +1,24 @@
+.profile{
+    background-color:black;
+    color: #fff;
+    padding: 50px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin:50px auto;
+    font-size:2rem;
+    text-align: left;
+
+}
+input{
+    background-color: white;
+    padding:10px;
+
+}
+.resume{
+    color:white;
+    font-family: 'Oswald', sans-serif;
+}
+
+span{
+    font-size: 2rem;
+}
