@@ -43,8 +43,8 @@ class FindJob extends Component{
                         marginTop: "20px",
                         color: "#fff",
                     }}
-                    >
-                        Jobs
+                    ><div className="tophead">Jobs</div>
+                        
                 </div>
                 {/* <Grid container spacing={1}> */}
                 <div className="row flex">    
