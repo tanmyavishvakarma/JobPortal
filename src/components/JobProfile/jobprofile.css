@@ -1,42 +1,78 @@
-.profile{
+/* .profile{
     background-color:black;
     color: #fff;
     padding: 50px;
     border: 1px solid #000;
     border-radius: 4px;
-    margin:20px auto;
+    margin:20px auto;    
     font-size:2rem;
     text-align: left;
     font-family: 'Oswald', sans-serif;
+
 }
 input{
     background-color: white;
     padding:1px;
     font-size:.7rem;
-
-
+    width:11rem;
+    border-radius: 5px;
 }
 .resume{
     color:white;
     font-family: 'Oswald', sans-serif;
     background-color:black;
-    background-color:black;
     color: #fff;
     padding: 20px;
     border: 1px solid #000;
     border-radius: 4px;
-    font-size:1.5rem;
+    font-size:2rem;
     text-align:center;
+   
 }
 
 span{
     font-size: 2rem;
 }
 .btn{
+    color:black;
     font-size: 1rem;
     margin-top: 10px;
-    background-color: grey;
+    font-size:.4em;
+    background-color: white;
+    
 }
 .btn:hover{
-    background-color:cyan;
+    background-color:grey;
+    color:white;
+} */
+.row{
+    display: flex;
+    
+    align-items: center;
+}
+.profile{
+    
+    align-items: center;
+    background-color:black;
+    color: #fff;
+    padding: 50px;
+    border: 1px solid #000;
+    border-radius: 4px;
+       
+    font-size:2rem;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+
+}
+.resume{
+
+    background-color:black;
+    color: #fff;
+    padding: 50px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin:20px auto;    
+    font-size:2rem;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;       
 }

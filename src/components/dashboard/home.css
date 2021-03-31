@@ -1,20 +1,33 @@
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+
+button{ 
+    font-size: large;
+    background-color: white;
+    display: inline-flex;
+    margin: 30px 10px;
+    padding: 100px;
 
 }
-
-.job{
+.heading h1{
+    color:white;
     font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    color:grey
+    font-size: 7rem;
 }
-.title{
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 1.2rem;
-    color:grey
-
+.heading h4{
+    color:white;
+  
+    font-size: 3rem;
+    font-family: 'Shadows Into Light', cursive;
 }
-
-
+.col1 button{
+    padding: 5vh 10vh;
+    font-family: 'Oswald', sans-serif;
+    box-sizing:border-box;
+    font-size: 2rem;
+}
+.col2 button{
+    padding: 5vh 10vh;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    box-sizing:border-box;
+}

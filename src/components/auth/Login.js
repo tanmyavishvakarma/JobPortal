@@ -37,9 +37,11 @@ class Login extends Component{
         axios.post('http://localhost:4002/api/login',logindata)
             .then(response=>{
                 console.log("ui",response.data)
+                console.log(response.data.mail)
                 if(response.data.login==="Successfully Authenticated"){
                     localStorage.setItem("publisher",response.data.publisher)
                     localStorage.setItem("links","in")
+                    localStorage.setItem("mail",response.data.mail)
                     this.props.history.push("/home")    
                     window.location.reload();
                 } 

@@ -46,11 +46,11 @@ class FindJob extends Component{
                     ><div className="tophead">Jobs</div>
                         
                 </div>
-                {/* <Grid container spacing={1}> */}
-                <div className="row flex">    
+        
+                <div className="row">    
                     {this.state.fetchedjobs.map((job)=>(
-                        <div className="col 14" key={job.jobtitle}>
-                            {/* //    <Grid item xs={12} l={3} m={2}> */}
+                        <div className="bot" key={job.jobtitle}>
+                           
                                     <Card  
                                         jobtitle={job.jobtitle} 
                                         jobtype={job.jobtype}
@@ -58,12 +58,12 @@ class FindJob extends Component{
                                         company={job.company}
                                         publisher={job.publisher}
                                     />
-                                {/* </Grid> */}
+                           
                           
                         </div>
                     ))}
             </div>
-            {/* </Grid> */}
+          
         </div>
         );
     }
